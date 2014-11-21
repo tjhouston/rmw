@@ -1,0 +1,22 @@
+<template name="nav">
+<div class="navbar navbar-default">
+    <div class="navbar-inner">
+        <a class="brand" href="{{ pathFor 'home' }}">rmw</a>
+        <ul class="nav">
+ 		   <li><a href="{{ pathFor 'home' }}">Home</a></li>
+ 		   <li><a href="{{ pathFor 'about' }}">About</a></li>
+		    {{#if currentUser}}
+ 		   	<li><a href="{{ pathFor 'products' }}">My Products</a></li>
+ 		   	<li><a href="{{ pathFor 'add' }}">Add Item</a></li>
+			{{/if}}
+		   
+	   </ul>
+		   <ul class="pull-right nav ">
+ 		   <li><a> {{> loginButtons}} </a></li>
+			   
+			</ul>
+			
+			
+    </div>
+</div>
+</template>
