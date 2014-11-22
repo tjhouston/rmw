@@ -5,7 +5,7 @@
 	bottom: 0;
 }
 
-.home{
+#home-page body{
 	
     background: url(images/Elephant.jpg) no-repeat center center fixed; 
      -webkit-background-size: cover;
