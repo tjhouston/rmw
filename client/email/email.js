@@ -7,7 +7,7 @@ Meteor.call('sendEmail',
             'Hello from meteor!',
             'This is a test of Email.send.'
 			);
-			console.log("Email button after method call ")
+			console.log("Email button after method call thanks ")
 			}
 		});
 
