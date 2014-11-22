@@ -35,7 +35,7 @@ Template.add.events({
       var expirationDate = event.target.expirationDate.value;
       var descriptionInput = event.target.descriptionInput.value;
       var itemCost = event.target.itemCost.value;
-      var receipt = event.target.receipt.value;
+      var receiptNumber = event.target.receiptNumber.value;
       var purchaseLocation = event.target.purchaseLocation.value;
       
       // get the user id
@@ -55,6 +55,6 @@ Template.add.events({
       console.log("NewItemNumber = " + newItemNumber);
 
       // insert the form data to the mongodb
-      Products.insert({clientID:clientID , productName:inputValue, purchaseDate:purchaseDate, expirationDate:expirationDate, descriptionInput:descriptionInput,itemCost:itemCost,receipt:receipt, purchaseLocation:purchaseLocation, upc:upc , itemNumber:newItemNumber});
-  }
+      Products.insert({clientID:clientID , productName:inputValue, purchaseDate:purchaseDate, expirationDate:expirationDate, descriptionInput:descriptionInput,itemCost:itemCost,receiptNumber:receiptNumber, purchaseLocation:purchaseLocation, upc:upc , itemNumber:newItemNumber});
+	    }
     });
