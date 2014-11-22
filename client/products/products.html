@@ -7,11 +7,12 @@
           <tr>
               <th>User ID</th>
 			  <th>Name</th>
+			   <th>UPC</th>
               <th>Purchase Date</th>
               <th>Warrenty Expires</th>
               <th>Description</th>
               <th>Cost</th>
-              <th>Recipt</th>
+              <th>Receipt</th>
               <th>Purchase Location</th>
 			  
 			  
@@ -24,10 +25,15 @@
 		
 		       <td>{{clientID}}</td>
 		       <td>{{productName}}</td>
+		       <td>{{upc}}</td>
 			   <td>{{purchaseDate}}</td>
 			   <td>{{expirationDate}}</td>
 			   <td>{{descriptionInput}}</td>
 			   <td>{{itemCost}}</td>
+			   <td>{{receipt}}</td>
+			   <td>{{purchaseLocation}}</td>
+			   
+			   
 			   
 		  	</tr>
 		     {{/each}}
