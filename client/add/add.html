@@ -1,8 +1,6 @@
 <template name="add">
   <div class="modal-dialog addBack">
 	  <div class= "modal-content">
-	  
-  
   <form>
       <legend>Add A New Product</legend>
       <label>Product Name </label><br>
@@ -22,10 +20,15 @@
       
 	  <label>Cost </label><br>
       <input type="text" id="itemCost" class="itemCost" placeholder="Enter item cost here"><br>
-
+	  
+	  <div class= "receipt">
       <label>Add Receipt </label><br>
-      <input type="text" id="receipt" class="receipt" placeholder="Click to add an image of your receipt!"><br>
-
+      <input type="file" id="receiptFile" class="receiptFile" size="60" accept="image/*" placeholder="Upload a picture of your receipt">
+  	</div>
+	
+      <label>Purchase Location </label><br>
+      <input type="text" id="purchaseLocation" class="purchaseLocation"  placeholder="Where did you purchase your product?">
+	  
       <br>
       <button type="submit" class="btn submitProduct">Submit</button>
   </form>
