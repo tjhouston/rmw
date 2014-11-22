@@ -17,11 +17,11 @@
 	 	   <li><a href="{{ pathFor 'about' }}">About</a></li>
 	 	   {{#if currentUser}}
 	  	   <li><a href="{{ pathFor 'products' }}">My Products</a></li>
-			<li><a href="{{ pathFor 'add' }}">Add Item</a></li>
-			{{/if}}
-		   
+		   <li><a href="{{ pathFor 'add' }}">Add Item</a></li>
+		   <li><a href="{{ pathFor 'reminders' }}">Reminders</a></li>
+		   {{/if}}
           </ul>
-
+	  
           <ul class="nav navbar-nav pull-right">
 	 		<li><a> {{> loginButtons}} </a></li>
 			  

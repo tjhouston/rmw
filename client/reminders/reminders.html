@@ -1,0 +1,37 @@
+<template name="reminders">
+  <div class="productsBack text-center">
+    <u><h1>All Reminders</h1></u>
+    <table class="table table-bordered ">
+    
+      <thead>
+	<tr>
+          <th>#</th>
+	  <th>Name</th>
+	  <th>UPC</th>
+          <th>Purchase Date</th>
+          <th>Warranty Expires</th>
+          <th>Description</th>
+          <th>Cost</th>
+          <th>Receipt</th>
+          <th>Purchase Location</th>
+	</tr>
+      </thead>
+      
+      <tbody>
+	{{#each reminders}}
+	<tr>
+	  <td>{{itemNumber}}</td>
+	  <td>{{productName}}</td>
+	  <td>{{upc}}</td>
+	  <td>{{purchaseDate}}</td>
+	  <td>{{expirationDate}}</td>
+	  <td>{{descriptionInput}}</td>
+	  <td>{{itemCost}}</td>
+	  <td>{{receipt}}</td>
+	  <td>{{purchaseLocation}}</td>
+	</tr>
+	{{/each}}
+      </tbody>
+    </table>
+  </div>
+</template>
