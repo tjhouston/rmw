@@ -20,11 +20,15 @@ Template.add.events({
       var numUserEnteries = 0;
 
       // get the number of enteries the user has already made
-      //Products.count({ clientID: clientID});
+      var numUserEnteries = Products.find({ clientID: clientID}).count();
       
       console.log("User has previously entered = " + numUserEnteries);
 
+      var newItemNumber = numUserEnteries + 1;
+
+      console.log("NewItemNumber = " + newItemNumber);
+
       // insert the form data to the mongodb
-      Products.insert({clientID:clientID , productName:inputValue, purchaseDate:purchaseDate, expirationDate:expirationDate, descriptionInput:descriptionInput,itemCost:itemCost,receipt:receipt, purchaseLocation:purchaseLocation, upc:upc });
+      Products.insert({clientID:clientID , productName:inputValue, purchaseDate:purchaseDate, expirationDate:expirationDate, descriptionInput:descriptionInput,itemCost:itemCost,receipt:receipt, purchaseLocation:purchaseLocation, upc:upc , itemNumber:newItemNumber});
   }
     });
