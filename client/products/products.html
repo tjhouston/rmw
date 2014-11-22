@@ -1,12 +1,11 @@
 <template name="products">
 	
-  
   <table class="table table-striped">
   	<caption>My Products</caption>
   
       <thead>
           <tr>
-              <th>Product ID</th>
+              <th>User ID</th>
 			  <th>Name</th>
               <th>Purchase Date</th>
               <th>Warrenty Expires</th>
@@ -19,9 +18,19 @@
           </tr>
       </thead>
       <tbody>
-          <tr>
+         
+		    {{#each products}}
+			<tr>
+		
+		       <td>{{clientID}}</td>
+		       <td>{{productName}}</td>
+			   <td>{{purchaseDate}}</td>
+			   <td>{{expirationDate}}</td>
+			   
+		  	</tr>
+		     {{/each}}
             
-          </tr>
+          
       </tbody>
   </table>
 </template>
