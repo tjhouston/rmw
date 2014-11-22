@@ -1,18 +1,28 @@
-console.log("In add.js");
-// get todays date
-function getDate() {
-    var d = new Date(); 
-    var y = d.getFullYear();
-    var m = d.getMonth()+1;
-    var n = d.getDate();
-    console.log("Today's date is: " + y + "-" + m + "-" + n);
-    var today = y + "-" + m + "-" + n;
-    return today;
-}
+Template.add.helpers({
+	todayDate: function () {
+	    console.log("In add.js todayDate helper.");
+	    var d = new Date();
+	    var y = d.getFullYear();
+	    var m = d.getMonth()+1;
+	    var n = d.getDate();
+	    console.log("Today's date is: " + y + "-" + m + "-" + n);
+	    var today = y + "-" + m + "-" + n;
+	    return today;
+	}
+    });
 
-var formattedTodayDate = getDate();
-
-// store to var for spacebars
+Template.add.helpers({
+	nextYearDate: function () {
+	    console.log("In add.js todayDate helper.");
+	    var d = new Date();
+	    var y = d.getFullYear();
+	    var m = d.getMonth()+1;
+	    var n = d.getDate();
+	    console.log("Today's date is: " + y + "-" + m + "-" + n);
+	    var yearFromToday = y + 1 + "-" + m + "-" + n; // add one to the year.
+	    return yearFromToday;
+	}
+    });
 
 Template.add.events({
 	"click .submitProduct": function (event, template) {
