@@ -1,3 +1,6 @@
+console.log("In add.js");
+
+
 Template.add.events({
   "click .submitProduct": function (event, template) {
   },
@@ -15,7 +18,7 @@ Template.add.events({
       // get the user id
       clientID=Meteor.userId();
 
-      console.log("In add.js");
+      console.log("In add.js event handler form submit.");
 
       var numUserEnteries = 0;
 
