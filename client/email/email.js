@@ -3,7 +3,7 @@ Template.email.events({
 	},
 		"submit form": function (event, template) {
 Meteor.call('sendEmail',
-            'tj@tjhouston.com',
+            'tj@tjhouston.com, skrieder@gmail.com',
             'Hello from meteor!',
             'This is a test of Email.send.'
 			);
