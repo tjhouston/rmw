@@ -9,6 +9,10 @@ Router.map (function(){
     this.route('about',{path:'/about'});
     this.route('products',{path:'/products'});
     this.route('add',{path:'/add'});
+	this.route('modal',{path:'/modal'});
+	
+	
+	
 	
 
 })

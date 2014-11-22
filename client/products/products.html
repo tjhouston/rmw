@@ -1,27 +1,30 @@
 <template name="products">
+    <div class="productsBack">
 	
-  <table class="table table-striped">
-    <caption>My Products</caption>
-    
-    <thead>
-      <tr>
-        <th>#</th>
-	<th>Name</th>
-	<th>UPC</th>
-        <th>Purchase Date</th>
-        <th>Warranty Expires</th>
-        <th>Description</th>
-        <th>Cost</th>
-        <th>Receipt</th>
-        <th>Purchase Location</th>
-      </tr>
-    </thead>
-    <tbody>
-      
+  <table class="table table-bordered">
+  	<caption>My Products</caption>
+  
+      <thead>
+          <tr>
+              <th>User ID</th>
+			  <th>Name</th>
+			   <th>UPC</th>
+              <th>Purchase Date</th>
+              <th>Warranty Expires</th>
+              <th>Description</th>
+              <th>Cost</th>
+              <th>Receipt</th>
+              <th>Purchase Location</th>
+			  
+			  
+          </tr>
+      </thead>
+      <tbody>
+         
 		    {{#each products}}
 			<tr>
 		
-		       <td>1</td>
+		       <td>{{clientID}}</td>
 		       <td>{{productName}}</td>
 		       <td>{{upc}}</td>
 			   <td>{{purchaseDate}}</td>
@@ -39,4 +42,5 @@
           
       </tbody>
   </table>
+</div>
 </template>

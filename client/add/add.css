@@ -1,5 +1,9 @@
-.descriptionInput{ 
+.descriptionInput { 
     width:300;
 	height:500;
+}
+
+.addBack {
+	background-color: rgb(255,255,255);
 }
 
