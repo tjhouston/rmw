@@ -13,4 +13,5 @@ bootstrap
 accounts-password
 jquery
 mrt:cron
+email
 
