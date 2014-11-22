@@ -2,27 +2,30 @@
 	text-align: center;
 	position: relative;
 	bottom: 0;
-	
+	color:#ffffff;		
 }
-
-.cover
+a:link {
+    color: #FFFFFF;
+}
+a:visited {
+    color: #FFFFFF;
+}
+.cover-container
 {
 	
-background-color: transparent;	
+background-color: transparent;
+color:#ffffff;	
 	
 }
 
 body{
-	
-    background: url(images/Elephant.jpg) no-repeat center center fixed; 
+	padding-top: 70px; 
+    background: url(images/elephantOverlay.png) no-repeat center center fixed; 
 	-webkit-filter: opacity(0.4)
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
      background-size: cover;
-	 
-	 
-  
      height: 100%;
      color: #ffffff;
      text-align: center;
