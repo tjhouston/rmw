@@ -247,7 +247,8 @@ th {
     background: #fff !important;
   }
   .navbar {
-    display: none;
+	  padding-left:10px;
+	  display: none;
   }
   .btn > .caret,
   .dropup > .btn > .caret {
@@ -3643,6 +3644,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav {
   padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.navbar-inner {
+  padding-left: 0px;
   margin-bottom: 0;
   list-style: none;
 }
