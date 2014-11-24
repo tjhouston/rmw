@@ -13,11 +13,5 @@ Router.map (function(){
 	this.route('email',{path:'/email'});
 	this.route('login',{path:'/login'});
 	this.route('register',{path:'/register'});
-	
-	
-	
-	
-	
-	
-
+	this.route('email',{path:'/email'});
 })
