@@ -12,6 +12,8 @@ Router.map (function(){
 	this.route('reminders',{path:'/reminders'});
 	this.route('email',{path:'/email'});
 	this.route('login',{path:'/login'});
+	this.route('register',{path:'/register'});
+	
 	
 	
 	
