@@ -14,18 +14,19 @@
           <ul class="nav navbar-nav">
  		   <li><a href="{{ pathFor 'home' }}">Home</a></li>
 	 	   <li><a href="{{ pathFor 'about' }}">About</a></li>
+		   <li><a href="{{ pathFor 'email' }}">Beta Signup</a></li>
+		   
 	 	   {{#if currentUser}}
 	  	   <li><a href="{{ pathFor 'products' }}">My Products</a></li>
 		   <li><a href="{{ pathFor 'add' }}">Add Item</a></li>
 		   <li><a href="{{ pathFor 'reminders' }}">Reminders</a></li>
 		   <li><a href="{{ pathFor 'email' }}">Email</a></li>
-		   <li><a href="{{ pathFor 'logout' }}">Logout</a></li>
 		   {{/if}}
           </ul>
 	  
           <ul class="nav navbar-nav pull-right">
 	 		<li><a> {{> loginButtons}} </a></li>
- 		   <li><a href="{{ pathFor 'login' }}">Login/CreateAccount</a></li>
+		   
 		   
 			  
             
