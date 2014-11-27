@@ -26,12 +26,17 @@ Template.reminders.helpers({
 
             var weekFromToday = y + "-" + m + "-" + n;
 
+	    // hotfix for day less than 10
+	    if(n<10){
+		weekFromToday = y + "-" + m + "-0" + n;
+	    }
+	    
 	    console.log("Week from today variable is: " + weekFromToday);
 
 	    //var 30days = [September, April, June, November];
 	    //var 31days = [January, February, March, May, July, August, October, December];
 	    
 //	    return Products.find({expirationDate: weekFromToday}); // find all the products
-	    return Products.find(); // find all the products
+	    return Products.find({expirationDate: weekFromToday}); // find all the products
 	}
     });
