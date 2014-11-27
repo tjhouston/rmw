@@ -3989,16 +3989,12 @@ body{
      float: left;
      height: 50px;
      font-size: 18px;
-     line-height: 20px;
-   }
-   .navbar-brand:hover,
-   .navbar-brand:focus {
-     text-decoration: none;
+     line-height: 25px;
    }
    .navbar-brand > img {
    	height:50px;
    	width:50px;
-   	margin-top: -15px; 
+   	margin-top: -14.5px;
    }
    @media (min-width: 768px) {
      .navbar > .container .navbar-brand,
