@@ -35,8 +35,16 @@ Template.reminders.helpers({
 
 	    //var 30days = [September, April, June, November];
 	    //var 31days = [January, February, March, May, July, August, October, December];
-	    
-//	    return Products.find({expirationDate: weekFromToday}); // find all the products
-	    return Products.find({expirationDate: weekFromToday}); // find all the products
+
+	    Reminders = new Meteor.Collection('reminders');
+
+	    Reminders = Products.find({expirationDate: weekFromToday, clientID: myID}); // find all the products
+
+	    Meteor.call('sendEmail',
+			'tj@tjhouston.com, skrieder@gmail.com',
+			'Test reminder', 'This is a reminder message'
+                       );
+
+	    return Reminders;
 	}
-    });
+});
