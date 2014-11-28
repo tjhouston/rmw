@@ -8,11 +8,11 @@ autopublish
 insecure
 iron:router
 accounts-base
-bootstrap
 accounts-password
 jquery
 mrt:cron
 email
 mizzao:bootstrap-3
-accounts-ui-unstyled
+accounts-facebook
+spacebars
 
