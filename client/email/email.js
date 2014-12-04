@@ -13,7 +13,7 @@ Template.email.events({
 			'You have a new beta tester! ', message
            	       );
 	    console.log("Email button for beta form ")
-	    alert("Houston, we have liftoff. sWe will be in touch! Thanks TJ & Scott")
+	    alert("Houston, we have liftoff. We will be in touch! Thanks TJ & Scott")
 	}
 });
 
