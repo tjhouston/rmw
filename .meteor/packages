@@ -4,13 +4,11 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
 insecure
 iron:router
 accounts-base
 bootstrap
 jquery
-mrt:cron
 email
 mizzao:bootstrap-3
 accounts-ui-unstyled
@@ -20,4 +18,6 @@ accounts-ui
 accounts-google
 accounts-github
 accounts-twitter
+chrismbeckett:fontawesome4
+mrt:cron
 
