@@ -42,10 +42,10 @@ Template.reminders.helpers({
             clientID: myID
         }); // find all the products
 
-        Meteor.call('sendEmail',
-            'tj@tjhouston.com, skrieder@gmail.com',
-            'Test reminder', 'This is a reminder message'
-        );
+        // Meteor.call('sendEmail',
+ //            'tj@tjhouston.com, skrieder@gmail.com',
+ //            'Test reminder', 'This is a reminder message'
+ //        );
 
         return Reminders;
     }

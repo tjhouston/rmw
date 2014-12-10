@@ -64,11 +64,13 @@ var daily = function() {
             _id: product.clientID
         });
         var userEmail = currentUser.emails[0].address;
+		var item = product.productName;
+
         console.log(userEmail);
         console.log(product);
 
-        Meteor.call('sendEmail', userEmail, "Reminding you about your warranty!",
-            "This is a friendly reminder that your product warranty is expiring soon. Thanks the RMW Team");
+        Meteor.call('sendEmail', userEmail, "Reminding you about your warranty on your "+ item +"!",
+            "This is a friendly reminder that your product warranty on your " + item + " is expiring soon. Thanks the RMW Team");
 
         // FUTURE ADD LINK TO PRODUCT ON WEBSITE
 
@@ -81,7 +83,8 @@ var daily = function() {
 
 var cron = new Meteor.Cron({
     events: {
-        "00 20 * * *": daily
+        "0 0 * * *": daily
 
     }
 });
+
