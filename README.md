@@ -1,6 +1,6 @@
 rmw
 ===
-Thanks for your interest! You can check out the latest development version of rmw here:
+Check out the latest development version of rmw here:
 http://rmw.meteor.com/
 
 ### Problem
@@ -19,3 +19,4 @@ With RMW we seek to change this and keep track of purchase dates and receipts an
 
 *Email verification
 
+Thanks for your interest!
