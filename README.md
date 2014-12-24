@@ -1,13 +1,14 @@
 rmw
 ===
-Remember my warranty is a simple project by TJ Houston & Scott Krieder to learn meteor.js.
+Thanks for your interest! You can check out the latest development version of rmw here:
+http://rmw.meteor.com/
 
 ### Problem
 
 So many times we found that we would purchase warranties on products and either never use them or if we did need to use them we would never have the required purchase info. 
 With RMW we seek to change this and keep track of purchase dates and receipts and even send automated emails to remind us when our warranties will be up. 
 
-### Next Steps
+### Future Work
 *Image upload of receipts
 
 *Email reminders
